@@ -32,7 +32,7 @@ export const Route = createRootRoute({
   head: () => ({
     meta: [
       {
-        title: "OpenSEO",
+        title: "BiteTech SEO",
       },
       {
         charSet: "utf-8",

@@ -180,8 +180,23 @@ function MobileTopBar({
       >
         <Menu className="h-5 w-5" />
       </button>
-      <Link to="/" className="ml-1 font-semibold text-base-content">
-        OpenSEO
+      <Link
+        to="/"
+        className="ml-1 flex items-center"
+        aria-label="BiteTech SEO — início"
+      >
+        <img
+          src="/bt-logo-dark.png"
+          alt=""
+          aria-hidden="true"
+          className="bt-wordmark-light h-5 w-auto"
+        />
+        <img
+          src="/bt-logo-transparent.png"
+          alt=""
+          aria-hidden="true"
+          className="bt-wordmark-dark h-5 w-auto"
+        />
       </Link>
     </div>
   );

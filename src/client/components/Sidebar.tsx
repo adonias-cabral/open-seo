@@ -124,9 +124,21 @@ export function Sidebar({ projectId, onNavigate, onClose }: SidebarProps) {
         <Link
           to="/"
           onClick={onNavigate}
-          className="text-base font-semibold text-base-content"
+          className="flex items-center"
+          aria-label="BiteTech SEO — início"
         >
-          OpenSEO
+          <img
+            src="/bt-logo-dark.png"
+            alt=""
+            aria-hidden="true"
+            className="bt-wordmark-light h-6 w-auto"
+          />
+          <img
+            src="/bt-logo-transparent.png"
+            alt=""
+            aria-hidden="true"
+            className="bt-wordmark-dark h-6 w-auto"
+          />
         </Link>
         {onClose ? (
           <button

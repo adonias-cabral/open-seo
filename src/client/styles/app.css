@@ -29,17 +29,17 @@
   --color-base-200: oklch(97% 0 0);
   --color-base-300: oklch(92% 0 0);
   --color-base-content: oklch(20% 0 0);
-  --color-primary: oklch(50% 0.12 262);
+  --color-primary: oklch(64.9% 0.235 30.6);
   --color-primary-content: oklch(100% 0 0);
-  --color-secondary: oklch(55% 0.15 145);
+  --color-secondary: oklch(62.4% 0.13 162.1);
   --color-secondary-content: oklch(100% 0 0);
-  --color-accent: oklch(50% 0.12 262);
+  --color-accent: oklch(56.8% 0.208 30.8);
   --color-accent-content: oklch(100% 0 0);
   --color-neutral: oklch(25% 0 0);
   --color-neutral-content: oklch(100% 0 0);
   --color-info: oklch(70% 0.15 230);
   --color-info-content: oklch(100% 0 0);
-  --color-success: oklch(65% 0.18 145);
+  --color-success: oklch(62.4% 0.13 162.1);
   --color-success-content: oklch(100% 0 0);
   --color-warning: oklch(80% 0.15 80);
   --color-warning-content: oklch(100% 0 0);
@@ -64,17 +64,17 @@
   --color-base-200: oklch(12% 0 0);
   --color-base-300: oklch(27% 0 0);
   --color-base-content: oklch(92% 0 0);
-  --color-primary: oklch(66% 0.12 262);
+  --color-primary: oklch(64.9% 0.235 30.6);
   --color-primary-content: oklch(100% 0 0);
-  --color-secondary: oklch(60% 0.15 145);
+  --color-secondary: oklch(62.4% 0.13 162.1);
   --color-secondary-content: oklch(100% 0 0);
-  --color-accent: oklch(66% 0.12 262);
+  --color-accent: oklch(64.9% 0.235 30.6);
   --color-accent-content: oklch(100% 0 0);
   --color-neutral: oklch(85% 0 0);
   --color-neutral-content: oklch(20% 0 0);
   --color-info: oklch(70% 0.15 230);
   --color-info-content: oklch(100% 0 0);
-  --color-success: oklch(65% 0.18 145);
+  --color-success: oklch(62.4% 0.13 162.1);
   --color-success-content: oklch(100% 0 0);
   --color-warning: oklch(80% 0.15 80);
   --color-warning-content: oklch(100% 0 0);
@@ -369,4 +369,19 @@ html[data-theme="openseo-dark"] .alert-success {
 
 html[data-theme="openseo-dark"] .alert-error {
   @apply border-error/60 bg-error/20;
+}
+
+/* BiteTech wordmark: the dark-on-white logo shows on the light theme, the
+   transparent logo on the dark theme. Pair both imgs with bt-wordmark-light /
+   bt-wordmark-dark; exactly one is visible at a time. */
+.bt-wordmark-dark {
+  display: none;
+}
+
+html[data-theme="openseo-dark"] .bt-wordmark-light {
+  display: none;
+}
+
+html[data-theme="openseo-dark"] .bt-wordmark-dark {
+  display: inline;
 }
